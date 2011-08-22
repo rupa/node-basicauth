@@ -1,0 +1,18 @@
+http basic auth as simple as I could make it
+
+Usage:
+    In a server, pass request, response, and a callback to authorize().
+    The callback get the user and pass and should return true or false.
+
+    auth.authorize(req, res, callback)
+    auth.content_type = 'application/json'
+    auth.realm = "private"
+    auth.msg = '{"error":"401 Unauthorized"}'
+
+Example:
+    auth = require('./auth');
+    var creds = auth.authorize(req, res, function(user, pass) {
+        if( user == 'validuser' && pass == 'correctpassword' ) return true;
+        return false
+    });
+    if( ! creds ) return;

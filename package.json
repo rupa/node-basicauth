@@ -1,0 +1,8 @@
+{
+  "name": "basicauth",
+  "description": "http basic auth as simple as I could make it",
+  "version": "0.0.1",
+  "author": "rupa <rupa@lrrr.us>",
+  "keywords": ["http", "basic", "authentication"],
+  "main": "./auth"
+}
