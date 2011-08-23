@@ -2,7 +2,8 @@ http basic auth as simple as I could make it
 
 Usage:
     In a server, pass request, response, and a callback to authorize().
-    The callback get the user and pass and should return true or false.
+    The callback get the submitted user and pass and should return false
+    if user is not authorized.
 
     auth.authorize(req, res, callback)
     auth.content_type = 'application/json'

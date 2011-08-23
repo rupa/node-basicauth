@@ -4,5 +4,6 @@
   "version": "0.0.1",
   "author": "rupa <rupa@lrrr.us>",
   "keywords": ["http", "basic", "authentication"],
+  "private": false,
   "main": "./auth"
 }
