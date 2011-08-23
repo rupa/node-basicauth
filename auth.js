@@ -23,8 +23,7 @@ auth.authorize = function(req, res, callback) {
     if( "authorization" in req.headers ) {
         var authorization = req.headers.authorization.split(' ');
         authorization = base64.decode(authorization[1]).split(':');
-        var creds = callback(authorization[0], authorization[1]);
-        if( creds ) return creds;
+        return callback(authorization[0], authorization[1]);
     }
     res.writeHead(401, {
         "WWW-Authenticate": 'Basic Realm="' + auth.realm + '"',
