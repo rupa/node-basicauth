@@ -12,7 +12,7 @@ Usage:
 Example:
     auth = require('./auth');
     var creds = auth.authorize(req, res, function(user, pass) {
-        if( user == 'validuser' && pass == 'correctpassword' ) return true;
-        return false
+        if( user == 'validuser' && pass == 'correctpassword' ) return user;
+        return false;
     });
     if( ! creds ) return;
