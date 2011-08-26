@@ -1,9 +1,10 @@
 {
   "name": "basicauth",
-  "description": "http basic auth as simple as I could make it",
   "version": "0.0.1",
-  "author": "rupa <rupa@lrrr.us>",
+  "description": "http basic auth as simple as I could make it",
   "keywords": ["http", "basic", "authentication"],
+  "author": "rupa <rupa@lrrr.us>",
+  "homepage": "https://github.com/rupa/node-basicauth",
   "private": false,
   "main": "./auth"
 }

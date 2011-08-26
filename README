@@ -1,4 +1,5 @@
-http basic auth as simple as I could make it
+HTTP basic auth as simple as I could make it. This package is neither stable nor
+guaranteed to work.
 
 Usage:
     In a server, pass request, response, and a callback to authorize().
